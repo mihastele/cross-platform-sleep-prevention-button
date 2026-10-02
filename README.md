@@ -4,6 +4,8 @@ A small Windows, Linux and macOS widget with one switch to prevent automatic
 idle sleep. A shared Qt interface uses each OS's native sleep inhibitor through
 [wakepy](https://wakepy.readthedocs.io/stable/user-guide.html).
 
+![Stay Awake widget with sleep prevention enabled](docs/stay-awake.png)
+
 - **Switch on:** prevent automatic sleep while the app runs. The display may
   still turn off and the screen may still lock.
 - **Switch off:** release the inhibitor; normal system idle sleep settings apply.
@@ -56,7 +58,7 @@ distribution. CPU architecture matches the build machine.
 
 The GitHub Actions workflow tests and builds all three platforms when pushed
 to a GitHub repository, or when run manually. Downloads appear as workflow
-artifacts. This folder is not yet a Git repository, so no workflow has run remotely.
+artifacts.
 
 ## Platform behavior
 
