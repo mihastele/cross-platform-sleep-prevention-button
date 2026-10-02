@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stay-awake-widget"
+version = "1.0.0"
+description = "A small tray widget to control automatic sleep on Windows, Linux and macOS."
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.9,<7", "wakepy==1.0.0", "jeepney>=0.8,<1; sys_platform == 'linux'"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pyinstaller>=6,<7"]
+
+[project.gui-scripts]
+stay-awake = "stay_awake.app:main"
+
+[tool.setuptools.packages.find]
+include = ["stay_awake*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
