@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stay Awake — Keep Your PC Awake for AI Agents | Free Download</title>
+  <meta name="description" content="Stay Awake is a free one-switch app that stops idle sleep during AI agent runs, builds and downloads. Windows, macOS & Linux. No account, no tracking.">
+  <meta name="keywords" content="stay awake app, keep pc awake, prevent computer from sleeping, stop auto sleep, caffeine app windows linux mac, AI coding agents overnight, sleep inhibitor, keep computer awake while downloading">
+  <meta name="author" content="Miha Stele">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- If you deploy the website/ folder as the site root, remove the /website path
+       from the canonical URL, og:url, og:image and sitemap below. -->
+  <link rel="canonical" href="https://mihastele.github.io/cross-platform-sleep-prevention-button/website/">
+  <meta name="theme-color" content="#0a111f">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Stay Awake">
+  <meta property="og:title" content="Stay Awake — Your PC stays awake while AI does the work">
+  <meta property="og:description" content="One free switch that stops idle sleep during AI agent runs, builds, downloads and renders. Windows, macOS & Linux. No account, no tracking, power settings never changed.">
+  <meta property="og:url" content="https://mihastele.github.io/cross-platform-sleep-prevention-button/website/">
+  <meta property="og:image" content="https://mihastele.github.io/cross-platform-sleep-prevention-button/website/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Stay Awake — Your PC stays awake while AI does the work. 100% free for Windows, macOS and Linux.">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Stay Awake — Your PC stays awake while AI does the work">
+  <meta name="twitter:description" content="One free switch that stops idle sleep during AI agent runs, builds, downloads and renders. Windows, macOS & Linux.">
+  <meta name="twitter:image" content="https://mihastele.github.io/cross-platform-sleep-prevention-button/website/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Stay Awake banner — 100% free for Windows, macOS and Linux.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Stay Awake",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": ["Windows", "macOS", "Linux"],
+    "softwareVersion": "1.0.0",
+    "url": "https://mihastele.github.io/cross-platform-sleep-prevention-button/website/",
+    "downloadUrl": "https://github.com/mihastele/cross-platform-sleep-prevention-button",
+    "author": { "@type": "Person", "name": "Miha Stele", "url": "https://github.com/mihastele" },
+    "description": "Stay Awake is a free one-switch tray widget that prevents automatic idle sleep while AI coding agents, builds, downloads and renders run. It never changes power settings and runs on Windows, macOS and Linux.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "isAccessibleForFree": true,
+    "screenshot": [
+      "https://mihastele.github.io/cross-platform-sleep-prevention-button/website/assets/screenshot-awake.png",
+      "https://mihastele.github.io/cross-platform-sleep-prevention-button/website/assets/screenshot-sleep.png"
+    ],
+    "featureList": "Prevent automatic idle sleep with one switch, tray widget for Windows macOS and Linux, never changes power settings, screen can still dim and lock, single instance"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Stay Awake really free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Stay Awake is 100% free with no strings attached: no account, no ads, no telemetry, no paywalled features and no administrator rights needed." }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Stay Awake help AI coding agents?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Autonomous agents such as Claude Code, Cursor or Copilot CLI often run for hours. If the OS falls into idle sleep mid-run, the work pauses or fails. Stay Awake holds a temporary sleep inhibitor so overnight refactors, test suites and builds finish while the screen may still dim and lock." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Stay Awake change my power settings?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. It only holds a temporary OS sleep inhibitor while the switch is on. Switching off or exiting releases it, and your existing idle sleep policy applies again unchanged." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my screen stay on?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Not necessarily. Stay Awake prevents automatic idle sleep; the display may still turn off and the screen may still lock, which keeps things secure while long jobs run." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which platforms are supported?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Windows, macOS and Linux. Each uses its native sleep inhibitor: SetThreadExecutionState on Windows, caffeinate on macOS, and GNOME SessionManager or freedesktop PowerManagement D-Bus inhibition on Linux." }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when I close the window?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The app keeps running quietly in the system tray (Windows notification area, Linux panel or macOS menu bar). Choosing Exit there releases sleep prevention and quits completely." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Stay Awake — home">
+        <img src="assets/logo-64.png" width="36" height="36" alt="Stay Awake logo">
+        <span class="brand-name">Stay Awake</span>
+      </a>
+      <div class="nav-links">
+        <a href="#why">Why</a>
+        <a href="#agents">AI agents</a>
+        <a href="#app">App</a>
+        <a href="#download">Download</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-spacer"></div>
+      <a class="coffee-link" href="https://buymeacoffee.com/mihastele" target="_blank" rel="noopener" aria-label="Buy me a coffee (opens in a new tab)">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M7 2v2M11 2v2M15 2v2"/></svg>
+        <span>Buy me a coffee</span>
+      </a>
+      <a class="btn btn-primary btn-small" href="#download">Get it free</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <div class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="hero-badge"><span class="dot" aria-hidden="true"></span>100% free · No account · No tracking</p>
+          <h1>Keep your PC <span class="underline">awake</span> while AI agents do the work.</h1>
+          <p class="lede">Stay Awake is a tiny one-switch widget that stops idle sleep during <strong>overnight agent runs, builds, downloads and renders</strong> — on Windows, macOS and Linux. Your power settings are never changed.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#download">Download free</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <div class="hero-meta">
+            <span class="os-chip">Windows</span>
+            <span class="os-chip">macOS</span>
+            <span class="os-chip">Linux</span>
+            <span class="sep" aria-hidden="true">·</span>
+            <span>Single 390&nbsp;px widget. Lives in the tray.</span>
+          </div>
+        </div>
+        <figure class="demo" aria-label="Interactive demo of the Stay Awake widget">
+          <div class="demo-window">
+            <p class="demo-eyebrow">A LITTLE SWITCH. AWAKE WHEN YOU NEED IT.</p>
+            <p class="demo-title">Stay Awake</p>
+            <p class="demo-sub">Choose when your computer can take a break.</p>
+            <div class="demo-card">
+              <div class="demo-row">
+                <span id="demo-label">Prevent sleep</span>
+                <button type="button" class="switch" role="switch" aria-checked="true" aria-labelledby="demo-label" id="demo-switch"></button>
+              </div>
+              <p class="demo-status on" id="demo-status">Keeping you awake</p>
+              <p class="demo-detail" id="demo-detail">Your computer stays awake. The screen can still dim or lock.</p>
+            </div>
+            <p class="demo-foot">Closing this window keeps the app in your tray. Exit releases sleep prevention.</p>
+          </div>
+          <figcaption class="demo-caption">Live demo — flip the switch. This mirrors the real app pixel for pixel.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="strip" aria-label="Tools Stay Awake pairs well with">
+      <div class="wrap strip-inner">
+        <span class="strip-label">Made for long nights with</span>
+        <span class="tool-pill">Claude Code</span>
+        <span class="tool-pill">Cursor</span>
+        <span class="tool-pill">Copilot CLI</span>
+        <span class="tool-pill">Aider</span>
+        <span class="tool-pill">Gemini CLI</span>
+        <span class="tool-pill">Overnight builds</span>
+        <span class="tool-pill">Renders &amp; uploads</span>
+      </div>
+    </div>
+    <!-- Problem -->
+    <section class="block" id="why" aria-labelledby="why-h">
+      <div class="wrap">
+        <p class="section-no">01 / The problem</p>
+        <h2 id="why-h">Your agent works all night. Your PC naps after 15 minutes.</h2>
+        <p class="section-intro">Autonomous coding agents can refactor, test and migrate for <strong>hours without you</strong> — but one idle timer can pause the whole run at 2&nbsp;a.m. You wake up to step 34 of 61 and a cold trail.</p>
+        <div class="problem-grid">
+          <div class="problem-copy">
+            <p>Every interrupted night costs you the same things: <strong>lost progress</strong>, a <strong>broken agent context</strong> you must rebuild, and a morning spent re-running what already ran.</p>
+            <p>Stay Awake holds a temporary OS sleep inhibitor while the switch is on — so the machine keeps crunching until the job is done. Switch it off and your normal sleep policy is back, untouched.</p>
+            <ul class="loss-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f1939b" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span><strong>Paused agent runs</strong> — idle sleep freezes long refactors, migrations and test suites mid-step.</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f1939b" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span><strong>Killed downloads &amp; uploads</strong> — datasets, backups and video renders stall overnight.</span></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f1939b" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span><strong>Dead dashboards</strong> — monitoring screens and remote-access machines go dark when you need them.</span></li>
+            </ul>
+          </div>
+          <div>
+            <div class="terminal" role="img" aria-label="Illustrative terminal log: without Stay Awake the run fails at 2:15 a.m.; with it, all 61 steps finish by 6:02 a.m.">
+              <div class="terminal-bar"><i></i><i></i><i></i><span>agent — overnight run</span></div>
+              <p class="terminal-body"><span class="t">[02:14]</span> <span class="cmd">step 34/61 … refactoring auth tests</span><br><span class="t">[02:15]</span> <span class="bad">OS idle sleep → run paused. Session cold.</span><br><br><span class="t">[02:14]</span> <span class="cmd">step 34/61 … refactoring auth tests</span><br><span class="t">[04:47]</span> <span class="cmd">step 59/61 … full suite green</span><br><span class="t">[06:02]</span> <span class="good">done — 61/61 steps, PR opened ✓</span></p>
+            </div>
+            <p class="terminal-note">Illustrative log. Stay Awake prevents automatic idle sleep; explicit Sleep, a closed lid or admin policy can still suspend the machine.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="block band" id="benefits" aria-labelledby="benefits-h">
+      <div class="wrap">
+        <p class="section-no">02 / What you get</p>
+        <h2 id="benefits-h">Everything a night shift needs. Nothing it doesn't.</h2>
+        <p class="section-intro">No dashboards, no accounts, no 40-toggle settings maze. One switch and a short list of promises the app actually keeps.</p>
+        <ol class="ledger">
+          <li>
+            <span class="ledger-no" aria-hidden="true">[01]</span>
+            <h3>One switch, zero learning curve</h3>
+            <p>On means <strong>awake</strong>, off means <strong>normal</strong>. The whole interface is a single widget — if you can flip a light switch, you already know the app.</p>
+          </li>
+          <li>
+            <span class="ledger-no" aria-hidden="true">[02]</span>
+            <h3>Long jobs survive the night</h3>
+            <p>AI agent runs, full test suites, video renders, dataset downloads, backups and compiles keep going until <strong>they</strong> decide they're done — not your idle timer.</p>
+          </li>
+          <li>
+            <span class="ledger-no" aria-hidden="true">[03]</span>
+            <h3>Power settings never change</h3>
+            <p>Stay Awake holds a <strong>temporary OS inhibitor</strong> instead of editing your power plan. Every launch starts with prevention off; exit and it's like the app was never there.</p>
+          </li>
+          <li>
+            <span class="ledger-no" aria-hidden="true">[04]</span>
+            <h3>Awake doesn't mean unlocked</h3>
+            <p>The display may still <strong>dim or turn off</strong> and the screen may still <strong>lock</strong>. Your machine crunches numbers behind a locked screen — security intact.</p>
+          </li>
+          <li>
+            <span class="ledger-no" aria-hidden="true">[05]</span>
+            <h3>Lives quietly in the tray</h3>
+            <p>Close the window and it keeps running in the <strong>system tray or menu bar</strong> with a matching toggle. One instance per session — relaunching just reopens it.</p>
+          </li>
+          <li>
+            <span class="ledger-no" aria-hidden="true">[06]</span>
+            <h3>Free forever, private by design</h3>
+            <p><strong>No account, no ads, no telemetry, no admin rights.</strong> A tiny native-feeling Qt widget that does one job and stays out of your way.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- AI agents -->
+    <section class="block" id="agents" aria-labelledby="agents-h">
+      <div class="wrap">
+        <p class="section-no">03 / Built for the agent era</p>
+        <h2 id="agents-h">Point your agent at the backlog. Go to bed.</h2>
+        <div class="agent-grid">
+          <div>
+            <p class="section-intro" style="margin-bottom:0">The best way to use a coding agent is <strong>asynchronously</strong>: brief it well, let it grind through the boring middle, review the diff with coffee. That only works if the machine stays up. Stay Awake is the night-shift supervisor — silent, free, and gone by morning.</p>
+            <ul class="check-list">
+              <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#67e8b3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Overnight refactors &amp; migrations</strong> — wake up to a finished branch, not a frozen step counter.</span></li>
+              <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#67e8b3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Marathon test suites &amp; builds</strong> — full CI-style runs on your own box, uninterrupted.</span></li>
+              <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#67e8b3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Renders, uploads &amp; downloads</strong> — media exports and dataset pulls that outlast your bedtime.</span></li>
+              <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#67e8b3" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><strong>Always-on sidekicks</strong> — dashboards, homelab panels and remote machines that must stay reachable.</span></li>
+            </ul>
+            <p class="agent-note"><strong>Tool-agnostic.</strong> Works with Claude Code, Cursor, Copilot CLI, Aider, Gemini CLI — or a plain shell script. If it runs on your PC, Stay Awake keeps the lights on for it.</p>
+          </div>
+          <div>
+            <div class="terminal" role="img" aria-label="Illustrative night-shift log showing an agent completing 61 steps overnight">
+              <div class="terminal-bar"><i></i><i></i><i></i><span>night shift — with Stay Awake on</span></div>
+              <p class="terminal-body"><span class="t">23:41</span> <span class="cmd">$ agent run "migrate auth to v2"</span><br><span class="t">23:42</span> <span class="cmd">plan accepted — 61 steps, ~6h</span><br><span class="t">01:18</span> <span class="cmd">step 28/61 … tests green so far</span><br><span class="t">03:55</span> <span class="cmd">step 51/61 … edge cases patched</span><br><span class="t">05:47</span> <span class="good">done — 61/61, PR #482 opened ✓</span><br><span class="t">05:47</span> <span class="good">you slept through all of it ✓</span></p>
+            </div>
+            <p class="terminal-note">Flip the switch when the run starts, switch it off with your morning coffee. That's the whole workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App -->
+    <section class="block band" id="app" aria-labelledby="app-h">
+      <div class="wrap">
+        <p class="section-no">04 / The app</p>
+        <h2 id="app-h">A little switch. Awake when you need it.</h2>
+        <p class="section-intro">One shared interface on every OS, powered by each platform's <strong>native sleep inhibitor</strong> — no hacks, no simulated keypresses, no admin rights.</p>
+        <div class="shots">
+          <figure class="shot">
+            <img src="assets/screenshot-awake.png" width="390" height="460" loading="lazy" alt="Stay Awake widget with sleep prevention switched on, showing Keeping you awake">
+            <figcaption><strong>Switch on:</strong> automatic idle sleep is prevented while the app runs.</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="assets/screenshot-sleep.png" width="390" height="460" loading="lazy" alt="Stay Awake widget with sleep prevention switched off, showing Sleep is allowed">
+            <figcaption><strong>Switch off:</strong> your normal idle sleep settings apply again.</figcaption>
+          </figure>
+        </div>
+        <table class="platforms">
+          <caption>How sleep prevention works on each supported operating system.</caption>
+          <thead>
+            <tr><th scope="col">OS</th><th scope="col">Sleep prevention</th><th scope="col">Tray behavior</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Windows</th><td><code>SetThreadExecutionState</code> — the same API media players use.</td><td>Notification area; the icon may sit in the overflow menu.</td></tr>
+            <tr><th scope="row">macOS</th><td><code>caffeinate</code> — Apple's native no-sleep assertion.</td><td>Menu bar icon with Open and toggle actions.</td></tr>
+            <tr><th scope="row">Linux</th><td>GNOME SessionManager or freedesktop PowerManagement D-Bus inhibition.</td><td>StatusNotifierItem / XEmbed tray. GNOME may need the AppIndicator extension.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="block" id="how" aria-labelledby="how-h">
+      <div class="wrap">
+        <p class="section-no">05 / How it works</p>
+        <h2 id="how-h">Three steps. The middle one is automatic.</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-no" aria-hidden="true">1</span>
+            <h3>Flip the switch</h3>
+            <p>Starting an agent run, a render or a big download? Turn prevention on. The widget shows “Keeping you awake”.</p>
+          </div>
+          <div class="step">
+            <span class="step-no" aria-hidden="true">2</span>
+            <h3>The OS holds the line</h3>
+            <p>Your system grants a temporary sleep inhibitor. The machine keeps working — while the screen can still dim and lock.</p>
+          </div>
+          <div class="step">
+            <span class="step-no" aria-hidden="true">3</span>
+            <h3>Switch off, back to normal</h3>
+            <p>Job done? Switch off or Exit. The inhibitor is released and your existing idle policy takes over, unchanged.</p>
+          </div>
+        </div>
+        <p class="how-note">Honest limits: Stay Awake prevents <em>automatic idle sleep</em>. Pressing Sleep yourself, closing a laptop lid, critical-battery actions and administrator policies can still suspend the computer — that's the OS doing its job.</p>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="block band" id="download" aria-labelledby="download-h">
+      <div class="wrap">
+        <p class="section-no">06 / Download</p>
+        <h2 id="download-h">Free forever. No strings attached.</h2>
+        <p class="section-intro">No paywall, no account, no ads, no telemetry. Grab the source, run it with Python 3.10+ (3.12 recommended), and build a distributable app with one command.</p>
+        <p class="free-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#67e8b3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free means free: every feature, every platform, no trial clock, no “pro” tier.</p>
+        <div class="dl-grid">
+          <div class="dl-card">
+            <h3>Windows</h3>
+            <p>PowerShell, Python 3.12:</p>
+            <pre><span class="c"># run from source</span>
+py -3.12 -m venv .venv
+.\.venv\Scripts\python -m pip install -e ".[dev]"
+.\.venv\Scripts\python -m stay_awake</pre>
+          </div>
+          <div class="dl-card">
+            <h3>macOS</h3>
+            <p>Terminal, Python 3.10+:</p>
+            <pre><span class="c"># run from source</span>
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m stay_awake</pre>
+          </div>
+          <div class="dl-card">
+            <h3>Linux</h3>
+            <p>Terminal, Python 3.10+:</p>
+            <pre><span class="c"># run from source</span>
+python3 -m venv .venv
+.venv/bin/python -m pip install -e '.[dev]'
+.venv/bin/python -m stay_awake</pre>
+          </div>
+        </div>
+        <div class="dl-foot">
+          <a class="btn btn-primary" href="https://github.com/mihastele/cross-platform-sleep-prevention-button" target="_blank" rel="noopener">Get the source on GitHub</a>
+          <a class="btn btn-ghost" href="https://github.com/mihastele/cross-platform-sleep-prevention-button/actions" target="_blank" rel="noopener">Builds for all 3 OSes</a>
+          <p>Packaged apps are built with <strong>PyInstaller on each target OS</strong> (Windows → <em>StayAwake.exe</em>, Linux → <em>StayAwake</em>, macOS → <em>StayAwake.app</em>). CI builds all three automatically — see Actions. On Ubuntu, install <em>libxcb-cursor0</em>, <em>libxkbcommon-x11-0</em> and <em>libegl1</em> if Qt reports missing platform libraries.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Support -->
+    <section class="block" id="support" aria-labelledby="support-h">
+      <div class="wrap">
+        <div class="support-card">
+          <div>
+            <p class="section-no" style="color:var(--amber)">07 / Keep it free</p>
+            <h2 id="support-h">Stay Awake is free. Coffee keeps <em>me</em> awake.</h2>
+            <p>There's no paywall and never will be — but if the app saved your overnight run, you can <strong>fuel the next release</strong> with a coffee. Completely optional, deeply appreciated.</p>
+            <div class="hero-ctas" style="margin-bottom:0">
+              <a class="btn btn-amber" href="https://buymeacoffee.com/mihastele" target="_blank" rel="noopener">Buy me a coffee</a>
+              <a class="btn btn-ghost" href="https://github.com/mihastele/cross-platform-sleep-prevention-button" target="_blank" rel="noopener">Star on GitHub</a>
+            </div>
+          </div>
+          <div class="support-cta">
+            <img src="assets/logo-64.png" width="96" height="96" loading="lazy" alt="Stay Awake app icon" style="border-radius:24px">
+            <small>100% of donations go to development.<br>No perks, no tiers — just thanks.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block band" id="faq" aria-labelledby="faq-h">
+      <div class="wrap">
+        <p class="section-no">08 / Questions</p>
+        <h2 id="faq-h">Asked before you ask.</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>Is Stay Awake really free?</summary>
+            <p class="faq-a">Yes — <strong>100% free with no strings attached</strong>. No account, no ads, no telemetry, no paywalled features, no admin rights. If it saved your night, there's an optional <a href="https://buymeacoffee.com/mihastele" target="_blank" rel="noopener">Buy me a coffee</a> link, and that's it.</p>
+          </details>
+          <details>
+            <summary>How does it help AI coding agents?</summary>
+            <p class="faq-a">Agents like <strong>Claude Code, Cursor, Copilot CLI, Aider or Gemini CLI</strong> often run for hours. If the OS idles into sleep mid-run, the work pauses or dies. Stay Awake holds a temporary sleep inhibitor so overnight refactors, test suites and builds <strong>finish while you sleep</strong> — the screen may still dim and lock.</p>
+          </details>
+          <details>
+            <summary>Does it change my power settings?</summary>
+            <p class="faq-a"><strong>Never.</strong> It requests a temporary OS-level inhibitor while the switch is on. Switch off or Exit and your existing idle sleep policy applies again, exactly as before. Every launch starts with prevention off.</p>
+          </details>
+          <details>
+            <summary>Will my screen stay on all night?</summary>
+            <p class="faq-a">Not necessarily. Stay Awake prevents <strong>automatic idle sleep</strong>; the display may still turn off and the screen may still lock. The machine keeps crunching behind a locked screen.</p>
+          </details>
+          <details>
+            <summary>Which platforms are supported?</summary>
+            <p class="faq-a"><strong>Windows, macOS and Linux</strong> — one shared Qt interface using each OS's native inhibitor: <strong>SetThreadExecutionState</strong> on Windows, <strong>caffeinate</strong> on macOS, and GNOME SessionManager / freedesktop D-Bus inhibition on Linux.</p>
+          </details>
+          <details>
+            <summary>What happens when I close the window?</summary>
+            <p class="faq-a">It keeps running quietly in the <strong>system tray</strong> (Windows notification area, Linux panel, macOS menu bar) with a matching toggle. <strong>Exit</strong> in the tray menu releases prevention and quits completely.</p>
+          </details>
+          <details>
+            <summary><span>What <em>can't</em> it prevent?</span></summary>
+            <p class="faq-a">Explicit Sleep, closing a laptop lid, critical-battery actions and administrator policies can still suspend the computer — and after release, the OS decides when to sleep using its own idle policy. That's by design: the app never fights your system.</p>
+          </details>
+          <details>
+            <summary>Do I need administrator rights?</summary>
+            <p class="faq-a"><strong>No.</strong> Requesting a sleep inhibitor is a normal user-level operation on all three platforms.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <div class="final">
+      <div class="wrap">
+        <div class="final-inner">
+          <div>
+            <h2>Stop losing nights to idle sleep.</h2>
+            <p>One switch. Three platforms. Zero cost. Your agents will thank you.</p>
+          </div>
+          <div class="final-ctas">
+            <a class="btn btn-primary" href="#download">Download free</a>
+            <a class="btn btn-ghost" href="https://github.com/mihastele/cross-platform-sleep-prevention-button" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Stay Awake — back to top">
+            <img src="assets/logo-64.png" width="32" height="32" loading="lazy" alt="Stay Awake logo">
+            <span class="brand-name">Stay Awake</span>
+          </a>
+          <p>A tiny one-switch widget that keeps your PC awake for AI agents, builds, downloads and renders. Free forever — power settings never changed.</p>
+        </div>
+        <nav class="footer-col" aria-label="Product links">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="#why">Why Stay Awake</a></li>
+            <li><a href="#agents">AI agents</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Project links">
+          <h3>Project</h3>
+          <ul>
+            <li><a href="https://github.com/mihastele/cross-platform-sleep-prevention-button" target="_blank" rel="noopener">GitHub repository</a></li>
+            <li><a href="https://github.com/mihastele/cross-platform-sleep-prevention-button/actions" target="_blank" rel="noopener">CI builds</a></li>
+            <li><a href="https://github.com/mihastele/cross-platform-sleep-prevention-button/issues" target="_blank" rel="noopener">Report an issue</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Support links">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="https://buymeacoffee.com/mihastele" target="_blank" rel="noopener">Buy me a coffee</a></li>
+            <li><a href="#support">Why donate</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-base">
+        <p>© <span id="year">2026</span> Stay Awake · Made by <a href="https://github.com/mihastele" target="_blank" rel="noopener">Miha Stele</a> · Free forever, no strings attached.</p>
+        <p>Windows, macOS and Linux are trademarks of their respective owners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
