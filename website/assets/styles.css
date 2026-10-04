@@ -369,6 +369,8 @@ footer.site-footer { border-top: 1px solid var(--line); background: var(--bg); }
   padding-top: 52px; padding-bottom: 40px;
 }
 .footer-brand p { color: var(--faint); font-size: 14.5px; max-width: 26em; }
+.featured-badge { margin: 18px 0 0; }
+.featured-badge img { display: block; height: auto; border-radius: 8px; }
 .footer-col h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--faint); margin: 0 0 14px; }
 .footer-col ul { list-style: none; margin: 0; padding: 0; }
 .footer-col li { margin-bottom: 10px; }
