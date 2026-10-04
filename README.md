@@ -1,3 +1,5 @@
+<a href="https://ufind.best/products/stay-awake" target="_blank" rel="noopener"><img src="https://ufind.best/badges/ufind-best-badge-light.svg" alt="Featured on ufind.best" width="150" /></a>
+
 # Stay Awake
 
 A small Windows, Linux and macOS widget with one switch to prevent automatic
